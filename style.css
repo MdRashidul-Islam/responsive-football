@@ -8,15 +8,14 @@ body {
 
 /* header part style start */
 
-header {
+.head-container {
   background-color: #2d25a0;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
   margin-bottom: 70px;
 }
 .match-title {
   color: white;
-  font-size: 74px;
+  font-size: 54px;
   line-height: 80px;
   font-weight: bold;
   margin-left: 156px;
@@ -26,9 +25,8 @@ header {
 }
 button {
   color: white;
-  margin-bottom: 80px;
   margin-top: 0;
-  margin-bottom: 179px;
+  margin-bottom: 169px;
   margin-left: 156px;
   padding: 10px 24px;
   background-color: #e02c6d;
@@ -37,22 +35,23 @@ button a {
   text-decoration: none;
   color: white;
   font-size: 16px;
+  font-weight: 500px;
 }
 button:hover {
-  background-color: rgb(37, 220, 20);
+  background-color: rgb(220, 20, 20);
   transition: 0.3s;
 }
 
 .top-banner img {
   width: 556.01px;
-  height: 440px;
-  margin-top: 153px;
+  height: 438px;
+  margin-top: 135px;
   margin-bottom: 86px;
   margin-right: 140.99px;
 }
 .top-banner img:hover {
-  transform: scale(1.5) skew(-10deg);
-  transition: 1.5s ease-in-out;
+  transform: scale(1.3) skew(-10deg);
+  transition: 0.8s ease-in-out;
 }
 
 /* header part style end */
@@ -77,8 +76,7 @@ main {
   margin-bottom: 27px;
   margin-left: 30px;
   justify-content: center;
-  box-shadow: 5px 5px 20px;
-  overflow-block: ;
+  box-shadow: 5px 5px 20px #b4b4b4;
 }
 
 .thumbnail img {
@@ -90,4 +88,69 @@ main {
 }
 .player-info {
   padding-left: 10px;
+}
+
+/* footer style sheet */
+.footer {
+  margin-top: 158px;
+}
+.footer-logo img {
+  width: 200px;
+  height: 60px;
+  margin: auto;
+  display: block;
+}
+.social-icon {
+  text-align: center;
+}
+
+/* @media query */
+
+/* mobile phone */
+@media only screen and (max-width: 688px) {
+  .head-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .match-title {
+    font-size: 40px;
+    line-height: 50px;
+    margin-left: 16px;
+    margin-right: 66px;
+    margin-top: 112px;
+  }
+  .top-banner img {
+    width: 329px;
+    height: 259.17px;
+    margin-right: 16px;
+    margin-left: 15px;
+    margin-top: 50px;
+    margin-bottom: 61.83px;
+  }
+
+  .live-button {
+    margin-left: 19px;
+    margin-right: 173px;
+  }
+
+  .container {
+    width: 100%;
+  }
+  .players {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .footer-logo {
+    margin-left: 18px;
+    margin-right: 71px;
+  }
+  .social-icon {
+    margin-left: 95px;
+    margin-right: 95px;
+  }
+  .social-icon p {
+    margin-left: 62px;
+    margin-right: 62px;
+    margin-bottom: 187px;
+  }
 }

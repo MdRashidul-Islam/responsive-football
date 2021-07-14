@@ -1,0 +1,93 @@
+/*--------------
+ common style
+ --------------- */
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+
+/* header part style start */
+
+header {
+  background-color: #2d25a0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 70px;
+}
+.match-title {
+  color: white;
+  font-size: 74px;
+  line-height: 80px;
+  font-weight: bold;
+  margin-left: 156px;
+  margin-right: 102px;
+  margin-top: 207px;
+  margin-bottom: 27px;
+}
+button {
+  color: white;
+  margin-bottom: 80px;
+  margin-top: 0;
+  margin-bottom: 179px;
+  margin-left: 156px;
+  padding: 10px 24px;
+  background-color: #e02c6d;
+}
+button a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+button:hover {
+  background-color: rgb(37, 220, 20);
+  transition: 0.3s;
+}
+
+.top-banner img {
+  width: 556.01px;
+  height: 440px;
+  margin-top: 153px;
+  margin-bottom: 86px;
+  margin-right: 140.99px;
+}
+.top-banner img:hover {
+  transform: scale(1.5) skew(-10deg);
+  transition: 1.5s ease-in-out;
+}
+
+/* header part style end */
+
+/* main part style start */
+
+main {
+  display: flex;
+  justify-content: center;
+}
+.container {
+  background-color: white;
+}
+.players {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.player {
+  width: 330px;
+  height: 474px;
+  padding: 15px;
+  margin-bottom: 27px;
+  margin-left: 30px;
+  justify-content: center;
+  box-shadow: 5px 5px 20px;
+  overflow-block: ;
+}
+
+.thumbnail img {
+  width: 320px;
+  height: 256px;
+  padding: 5px;
+  border-radius: 10px;
+  align-items: center;
+}
+.player-info {
+  padding-left: 10px;
+}
